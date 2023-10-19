@@ -14,7 +14,7 @@ struct RecipeView: View {
         NavigationStack{
             VStack{
                 ZStack{
-                    Image("ciao").resizable()
+                    Image("carbonara").resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 394, height: 277)
                         .clipped()
