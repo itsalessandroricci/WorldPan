@@ -13,7 +13,7 @@ struct RecipeView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                ZStack{
+                ZStack(alignment: .bottomLeading){
                     Image("carbonara").resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 394, height: 277)
@@ -24,19 +24,24 @@ struct RecipeView: View {
                         .background(.white)
                         .cornerRadius(10)
                         .padding(.top, 150.0)
-                    Text("Pasta Carbonara")
-                    .font(
-                    Font.custom("SF Pro", size: 19.90476)
-                    .weight(.bold)
-                    )
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.black)
-
-                    .frame(width: 163.7619, height: 38, alignment: .top) }
-                
+                    
+                    HStack {
+                        Text("Carbonara")
+                            .font(.title)
+                            .bold()
+                            .foregroundColor(.black)
+                        Spacer()
+                        HStack {
+                            Image(systemName: "timer")
+                            Text("20 min")
+                        }.padding()
+                       
+                    }
+                    .padding(.leading, 14.0)
+                }
             }
             .padding(.bottom, 480.0)
-        }
+        } //.navigationDestination(item: <#T##Binding<Optional<Hashable>>#>, destination: <#T##(Hashable) -> View#>)
         
     }
 }
