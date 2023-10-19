@@ -38,10 +38,61 @@ struct RecipeView: View {
                        
                     }
                     .padding(.leading, 14.0)
+                   
                 }
+                Text("Creamy Roman pasta dish with eggs, Pecorino cheese, guanciale, and black pepper, a culinary masterpiece.")
+                    .fontWeight(.regular)
+                .foregroundColor(.black)
+                .frame(width: 362, height: 70, alignment: .topLeading)
+                VStack{
+                    HStack{
+                        Image("hat")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 29, height: 29)
+                            .clipped()
+                        Text("Easy")
+                            .font(Font.custom("SF Pro", size: 15))
+                            .foregroundColor(.black)
+                        
+                Text("                  ")
+                       
+                        Image("hat")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 29, height: 29)
+                            .clipped()
+                        Text("Easy")
+                            .font(Font.custom("SF Pro", size: 15))
+                            .foregroundColor(.black)
+                    }
+                    VStack{
+                        HStack{
+                            Image("hat")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 29, height: 29)
+                                .clipped()
+                            Text("Easy")
+                                .font(Font.custom("SF Pro", size: 15))
+                                .foregroundColor(.black)
+                            Text("                  ")
+                            Image("hat")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 29, height: 29)
+                                .clipped()
+                            Text("Easy")
+                                .font(Font.custom("SF Pro", size: 15))
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+               
             }
-            .padding(.bottom, 480.0)
-        } //.navigationDestination(item: <#T##Binding<Optional<Hashable>>#>, destination: <#T##(Hashable) -> View#>)
+            .padding(.bottom, 300.0)
+        }
+//.navigationDestination(item: <#T##Binding<Optional<Hashable>>#>, destination: <#T##(Hashable) -> View#>)
         
     }
 }
