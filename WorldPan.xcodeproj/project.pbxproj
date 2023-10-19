@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A36FB3C2AE13FED008B4AE3 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36FB3B2AE13FED008B4AE3 /* FilterView.swift */; };
 		B4EA5D262AE1227400A4C88E /* WorldPanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA5D252AE1227400A4C88E /* WorldPanApp.swift */; };
 		B4EA5D2A2AE1227600A4C88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EA5D292AE1227600A4C88E /* Assets.xcassets */; };
 		B4EA5D2D2AE1227600A4C88E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EA5D2C2AE1227600A4C88E /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A36FB3B2AE13FED008B4AE3 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		B4EA5D222AE1227400A4C88E /* WorldPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EA5D252AE1227400A4C88E /* WorldPanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPanApp.swift; sourceTree = "<group>"; };
 		B4EA5D292AE1227600A4C88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				B4EA5D352AE124E500A4C88E /* DiscoverView.swift */,
 				B4EA5D372AE1257100A4C88E /* FavouriteView.swift */,
 				B4EA5D3A2AE1269900A4C88E /* RecipeView.swift */,
+				7A36FB3B2AE13FED008B4AE3 /* FilterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				B4EA5D382AE1257100A4C88E /* FavouriteView.swift in Sources */,
 				B4EA5D262AE1227400A4C88E /* WorldPanApp.swift in Sources */,
 				B4EA5D362AE124E500A4C88E /* DiscoverView.swift in Sources */,
+				7A36FB3C2AE13FED008B4AE3 /* FilterView.swift in Sources */,
 				B4EA5D3B2AE1269900A4C88E /* RecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
