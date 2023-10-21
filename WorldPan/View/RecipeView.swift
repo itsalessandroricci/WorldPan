@@ -9,10 +9,13 @@ import SwiftUI
 
 struct RecipeView: View {
     
+    // SEGMENTED CONTROL OPTIONS
+    
+    @State private var selectedSegment = 0
     
     var body: some View {
-        
-            NavigationStack{
+        NavigationView{
+            ScrollView{
                 
                 ZStack{
                     
@@ -59,7 +62,7 @@ struct RecipeView: View {
                                 VStack(alignment: .center, spacing: 10) {
                                     Image(systemName: "flame.fill")
                                         .foregroundColor(.color1)
-                                    //                                        .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                                    //                                        .shadow(color: .black, radius: 10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0)
                                     Image(systemName: "laurel.leading")
                                         .foregroundColor(.color1)
                                 }
@@ -79,27 +82,55 @@ struct RecipeView: View {
                             
                         }.padding(.horizontal, 45)
                         
-                        Picker(selection: .constant(1), label: Text("Picker")) {
-                            Text("Ingredients").tag(1)
-                            Text("Instructions").tag(2)
-                            
-                        }
-                        .pickerStyle(.segmented)
-                        .padding()
+                        
+                        
                         
                     }
                     .background(.white, in: .rect(cornerRadius: 15))
-                    .offset(y: 150.0)
+                    .offset(y: 220.0)
                     
                     
                 }
                 
+                // SEGMENTED CONTROL
                 
+                VStack {
+                    Picker("", selection: $selectedSegment) {
+                        Text("Ingredients").tag(0)
+                        Text("Instructions").tag(1)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding()
+                   
+                    
+                  
+                    VStack {
+                        
+//                        INGREDIENTS
+                        if selectedSegment == 0 {
+                            
+                            IngredientsView()
+                        }
+                        
+//                    INSTRUCTIONS
+                    ;  if selectedSegment == 1 {
+    
+                            InstructionsView()
+                        
+                        }
+                }
+                    
+                }
+                .padding(.top, 180.0)
+                }
             }
+            
+        }
         
         
     }
-}
+    
+
 
 #Preview {
     RecipeView()

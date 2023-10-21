@@ -9,7 +9,7 @@ import SwiftUI
 
 
     
-struct ContentView: View {
+struct FilterView: View {
     
     var body: some View {
         
@@ -462,5 +462,5 @@ struct ContentView: View {
     }
 }
 #Preview {
-    ContentView()
+    FilterView()
 }
