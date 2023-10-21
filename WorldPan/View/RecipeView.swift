@@ -11,88 +11,92 @@ struct RecipeView: View {
     
     
     var body: some View {
-        NavigationStack{
-            VStack{
-                ZStack(alignment: .bottomLeading){
-                    Image("carbonara").resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 394, height: 277)
-                        .clipped()
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 393, height: 62)
-                        .background(.white)
-                        .cornerRadius(10)
-                        .padding(.top, 150.0)
+        
+            NavigationStack{
+                
+                ZStack{
                     
-                    HStack {
-                        Text("Carbonara")
-                            .font(.title)
-                            .bold()
-                            .foregroundColor(.black)
-                        Spacer()
+                    Image("carbonara")
+                    
+                    VStack {
                         HStack {
-                            Image(systemName: "timer")
-                            Text("20 min")
-                        }.padding()
-                       
-                    }
-                    .padding(.leading, 14.0)
-                   
-                }
-                Text("Creamy Roman pasta dish with eggs, Pecorino cheese, guanciale, and black pepper, a culinary masterpiece.")
-                    .fontWeight(.regular)
-                .foregroundColor(.black)
-                .frame(width: 362, height: 70, alignment: .topLeading)
-                VStack{
-                    HStack{
-                        Image("hat")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 29, height: 29)
-                            .clipped()
-                        Text("Easy")
-                            .font(Font.custom("SF Pro", size: 15))
-                            .foregroundColor(.black)
+                            Text("Carbonara")
+                                .font(.title)
+                                .bold()
+                                .foregroundColor(.black)
+                            Spacer()
+                            HStack {
+                                Image(systemName: "timer")
+                                Text("20 min")
+                            }.padding()
+                        }.padding(.leading, 14.0)
                         
-                Text("                  ")
-                       
-                        Image("hat")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 29, height: 29)
-                            .clipped()
-                        Text("Easy")
-                            .font(Font.custom("SF Pro", size: 15))
+                        Text("Creamy Roman pasta dish with eggs, Pecorino cheese, guanciale, and black pepper, a culinary masterpiece.")
+                            .fontWeight(.regular)
                             .foregroundColor(.black)
-                    }
-                    VStack{
+                            .frame(width: 362, height: 70, alignment: .topLeading)
+                        
+                        
                         HStack{
-                            Image("hat")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 29, height: 29)
-                                .clipped()
-                            Text("Easy")
-                                .font(Font.custom("SF Pro", size: 15))
-                                .foregroundColor(.black)
-                            Text("                  ")
-                            Image("hat")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 29, height: 29)
-                                .clipped()
-                            Text("Easy")
-                                .font(Font.custom("SF Pro", size: 15))
-                                .foregroundColor(.black)
+                            HStack{
+                                VStack(alignment: .leading, spacing: 10){
+                                    Image(systemName: "frying.pan.fill")
+                                        .foregroundColor(.color1)
+                                    Image(systemName: "person.2.fill")
+                                        .foregroundColor(.color1)
+                                }
+                                VStack(alignment: .leading, spacing: 10){
+                                    Text("Easy")
+                                        .font(Font.custom("SF Pro", size: 15))
+                                        .foregroundColor(.black)
+                                    Text("2")
+                                        .font(Font.custom("SF Pro", size: 15))
+                                        .foregroundColor(.black)
+                                }
+                            }
+                            Spacer()
+                            HStack{
+                                VStack(alignment: .center, spacing: 10) {
+                                    Image(systemName: "flame.fill")
+                                        .foregroundColor(.color1)
+                                    //                                        .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                                    Image(systemName: "laurel.leading")
+                                        .foregroundColor(.color1)
+                                }
+                                
+                                VStack(alignment: .leading, spacing: 10)
+                                {
+                                    Text("565 Kcal")
+                                        .font(Font.custom("SF Pro", size: 15))
+                                        .foregroundColor(.black)
+                                    Text("65,3 Carbs")
+                                        .font(Font.custom("SF Pro", size: 15))
+                                        .foregroundColor(.black)
+                                }
+                                
+                                
+                            }
+                            
+                        }.padding(.horizontal, 45)
+                        
+                        Picker(selection: .constant(1), label: Text("Picker")) {
+                            Text("Ingredients").tag(1)
+                            Text("Instructions").tag(2)
+                            
                         }
+                        .pickerStyle(.segmented)
+                        .padding()
+                        
                     }
+                    .background(.white, in: .rect(cornerRadius: 15))
+                    .offset(y: 150.0)
+                    
+                    
                 }
-               
+                
+                
             }
-            .padding(.bottom, 300.0)
-        }
-//.navigationDestination(item: <#T##Binding<Optional<Hashable>>#>, destination: <#T##(Hashable) -> View#>)
+        
         
     }
 }

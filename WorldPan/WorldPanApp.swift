@@ -15,7 +15,7 @@ struct AppDevelopmentWSApp: App {
             
             TabView {
              
-                DiscoverView()
+               DiscoverView()
                     .tabItem {
                         Label("Countries", systemImage: "globe.desk.fill")
                     }
