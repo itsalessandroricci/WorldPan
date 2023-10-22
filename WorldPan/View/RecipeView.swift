@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeView: View {
     
+    
     // SEGMENTED CONTROL OPTIONS
     
     @State private var selectedSegment = 0
@@ -127,10 +128,16 @@ struct RecipeView: View {
                     
                 }
                 .padding(.top, 145.0)
-                }
-            }
-            
+                
+//                NAVIGATION TITLE
+                
+            }  .navigationBarTitle("ITALY", displayMode: .inline)
+                
+                .toolbarBackground(Color.color1,for: .navigationBar)
         }
+        
+            
+    }
         
         
     }

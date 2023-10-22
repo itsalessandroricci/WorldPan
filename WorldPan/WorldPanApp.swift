@@ -15,7 +15,7 @@ struct WorldPanApp: App {
             
             TabView {
              
-                DiscoverView()
+                RecipeView()
                     .tabItem {
                         Label("Countries", systemImage: "globe.desk.fill")
                     }
