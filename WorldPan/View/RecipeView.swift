@@ -20,6 +20,10 @@ struct RecipeView: View {
                 ZStack{
                     
                     Image("carbonara")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 394, height: 264)
+                        .clipped()
                     
                     VStack {
                         HStack {
