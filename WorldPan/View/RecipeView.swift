@@ -87,7 +87,7 @@ struct RecipeView: View {
                         
                     }
                     .background(.white, in: .rect(cornerRadius: 15))
-                    .offset(y: 220.0)
+                    .offset(y: 190.0)
                     
                     
                 }
@@ -122,7 +122,7 @@ struct RecipeView: View {
                     .frame(width: 400.0, height: 650.0)
                     
                 }
-                .padding(.top, 180.0)
+                .padding(.top, 145.0)
                 }
             }
             
