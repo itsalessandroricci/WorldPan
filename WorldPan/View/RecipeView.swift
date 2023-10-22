@@ -124,7 +124,8 @@ struct RecipeView: View {
                         
                         }
                     }
-                    .frame(width: 400.0, height: 650.0)
+//                    .padding(.bottom, 200.0)
+                    .frame(width: 0.0)
                     
                 }
                 .padding(.top, 145.0)
