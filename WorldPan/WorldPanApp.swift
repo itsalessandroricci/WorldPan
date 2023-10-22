@@ -8,14 +8,14 @@
 import SwiftUI
 
 @main
-struct AppDevelopmentWSApp: App {
+struct WorldPanApp: App {
     
     var body: some Scene {
         WindowGroup {
             
             TabView {
              
-                RecipeView()
+                DiscoverView()
                     .tabItem {
                         Label("Countries", systemImage: "globe.desk.fill")
                     }

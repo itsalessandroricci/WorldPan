@@ -118,7 +118,8 @@ struct RecipeView: View {
                             InstructionsView()
                         
                         }
-                }
+                    }
+                    .frame(width: 400.0, height: 650.0)
                     
                 }
                 .padding(.top, 180.0)
