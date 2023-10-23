@@ -106,35 +106,39 @@ struct RecipeView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .padding()
-                   
                     
-                  
+                    
+                    
                     VStack {
                         
-//                        INGREDIENTS
+                        //                        INGREDIENTS
                         if selectedSegment == 0 {
                             
                             IngredientsView()
+                            
                         }
                         
-//                    INSTRUCTIONS
-                    ;  if selectedSegment == 1 {
-    
+                        //                    INSTRUCTIONS
+                        ;  if selectedSegment == 1 {
+                            
                             InstructionsView()
-                        
+                            
                         }
                     }
-//                    .padding(.bottom, 200.0)
+                    //                    .padding(.bottom, 200.0)
                     .frame(width: 0.0)
                     
                 }
                 .padding(.top, 145.0)
                 
-//                NAVIGATION TITLE
-                
+                //                NAVIGATION TITLE
+            
             }  .navigationBarTitle("ITALY", displayMode: .inline)
                 
-                .toolbarBackground(Color.color1,for: .navigationBar)
+//                .toolbarBackground(Color.color1,for: .navigationBar)
+//                .navigationBarItems(leading: Button("Back") {
+//                               // Azione del pulsante
+//                           })
         }
         
             

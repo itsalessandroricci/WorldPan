@@ -8,19 +8,23 @@
 import SwiftUI
 
 @main
-struct WorldPanApp: App {
-    
-    var body: some Scene {
-        WindowGroup {
+struct WorldPanApp: App
+{
+    @State public var data:DataSet=DataSet()
+    var body: some Scene
+    {
+        WindowGroup
+        {
             
-            TabView {
+            TabView
+            {
              
-                DiscoverView()
+                DiscoverView(data: $data)
                     .tabItem {
                         Label("Countries", systemImage: "globe.desk.fill")
-                    }
+                        }
                     
-                FavouriteView()
+                FavouriteView(data:$data)
                     .tabItem {
                         Label("Favourites", systemImage: "heart")
                     }
@@ -31,4 +35,3 @@ struct WorldPanApp: App {
     }
     
 }
-

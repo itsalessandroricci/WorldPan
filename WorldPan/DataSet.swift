@@ -22,6 +22,7 @@ struct Ingredient: Identifiable
     var id: UUID = UUID()
     var name: String
     var weight: String
+    var locations: [String]=[]
 }
 
 
@@ -35,22 +36,26 @@ struct Recipe: Identifiable
     var vegan:Bool = false
     var lactoseFree:Bool = false
     var glutenFree:Bool = false
-    var difficulty:Int=0                //0-2
+    var difficulty:Int=0  //0-2
+    var time: Int
     var favourite:Bool=false
+    var calories: String
+    var carbs: String
+    var servings: Int
+    var description: String
+    
 }
 
 
 class DataSet
 {
     
-    var countries:[Country] =
-    [Country(name:"Italy",imageName:"italy",Recipes:[Recipe(name: "Pizza", imageName: "italy", ingredient: [Ingredient(name: "salt",weight: "weight")] , instruction: "These are the instructions:")]),
+   var countries:[Country] =
+    [Country(name:"Italy", imageName:"italy",Recipes:[Recipe(name: "Pizza", imageName: "italy", ingredient: [Ingredient(name: "salt",weight: "weight",locations: ["Via Lucullo 72 Bacoli(NA) Italy","",""])] , instruction: "These are the instructions: ", time: 15, favourite: false, calories: "565 Kcal", carbs: "65.3 carbs", servings: 2, description: "I love pizza")]),
     Country(name: "Mexico", imageName: "mexico"),
     Country(name: "Lebanon", imageName: "lebanon"),
     Country(name: "China", imageName: "china"),
     Country(name: "Thailand", imageName: "thailand")]
+    
+    
 }
-
-
-
-
