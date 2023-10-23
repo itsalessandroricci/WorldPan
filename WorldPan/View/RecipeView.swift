@@ -136,7 +136,7 @@ struct RecipeView: View {
             }  .navigationBarTitle("ITALY", displayMode: .inline)
                 
 //                .toolbarBackground(Color.color1,for: .navigationBar)
-//                .navigationBarItems(leading: Button("Back") {
+//                .navigationBarItems(trailing: Button("Back") {
 //                               // Azione del pulsante
 //                           })
         }

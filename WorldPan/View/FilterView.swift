@@ -46,6 +46,7 @@ struct FilterView: View
             
             Text("Time")
                 .font(.title)
+                .bold()
                 .padding()
                 .padding(.bottom, -25)
             
@@ -58,8 +59,9 @@ struct FilterView: View
             }
             .pickerStyle(.segmented)
             .padding(.all,20.0)
-            
+            Spacer()
         }.navigationTitle("Filters").padding().font(.title).toolbar
+        
 
         {
             
