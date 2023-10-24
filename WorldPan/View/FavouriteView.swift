@@ -22,12 +22,12 @@ struct FavouriteView: View
             ScrollView
             {
                 //Using an innested for each I can filter which of all the recipes are the favourite ones
-                ForEach(data.countries)
+                ForEach($data.countries)
                 {
                     country in
                     ForEach(country.Recipes)
                     {
-                        recipe in
+                        $recipe in
                         if (recipe.favourite)
                         {
                             ZStack(alignment: .bottomLeading)
@@ -62,12 +62,10 @@ struct FavouriteView: View
 }
     
 
-
+/*
 #Preview
 {
     FavouriteView(data:WorldPanApp().$data)
 }
 
-
-   
-
+*/

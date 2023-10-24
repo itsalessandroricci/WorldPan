@@ -22,7 +22,7 @@ struct FilterView: View
     var body: some View
     {
 
-   NavigationView
+    NavigationView
     {
         VStack (alignment: .leading)
         {
@@ -60,10 +60,7 @@ struct FilterView: View
             .pickerStyle(.segmented)
             .padding(.all,20.0)
             Spacer()
-        }.navigationTitle("Filters").padding().font(.title).toolbar
-        
-
-        {
+        }.navigationTitle("Filters").padding().font(.title).toolbar{
             
             //we have two elements in the toolbar: done and cancel
             

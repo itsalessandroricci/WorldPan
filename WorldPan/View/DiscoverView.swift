@@ -82,8 +82,9 @@ struct DiscoverView: View
     }
         
 }
-
+/*
 #Preview
 {
     DiscoverView(data:WorldPanApp().$data)
 }
+*/

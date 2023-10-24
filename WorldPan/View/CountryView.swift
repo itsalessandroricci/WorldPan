@@ -15,6 +15,7 @@ struct CountryView: View
     @State public  var time:Int = -1
     @State public  var difficulty:Int = -1
     @Binding public var data: DataSet
+    @State var heart :Bool = false
     
     let color1=Color("color1")
 
@@ -49,7 +50,7 @@ struct CountryView: View
                     ForEach($data.countries)
                     {
                         $country in
-                    if(country.name==selection || selection=="All")
+                        if(country.name==selection || selection=="All")
                         {
                         ForEach($country.Recipes)
                         {
@@ -58,36 +59,60 @@ struct CountryView: View
                             {
                                 if(recipe.time == time || time == -1)
                                 {
-                                    ZStack(alignment: .bottomLeading)
+                                  
+                                    NavigationLink(destination: RecipeView(recipe: recipe, country: country))
                                     {
-                                        
-                                        //Image
-                                        Image(recipe.imageName).resizable()
-                                            .aspectRatio(contentMode: .fill)
-                                            .frame(width: 351, height: 174)
-                                            .clipped()
-                                            .cornerRadius(25)
-                                            .padding(.top, 5).shadow(color: .gray, radius: 1,y:5)
-                                        
-                                        
-                                        VStack (alignment: .leading)
+
+                                        ZStack(alignment: .bottomLeading)
                                         {
-                                            //Team Name
-                                            Text(recipe.name).font(.title).bold()
                                             
-                                            //Learners
-                                            HStack
+                                            //Image
+                                            Image(recipe.imageName).resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(width: 351, height: 174)
+                                                .clipped()
+                                                .cornerRadius(25)
+                                                .padding(.top, 5).shadow(color: .gray, radius: 1,y:5)
+                                            
+                                            Rectangle().foregroundColor(.clear).frame(width: 351, height: 174)
+                                                .background(LinearGradient(stops:
+                                                [   Gradient.Stop(color: .black.opacity(0), location: 0.40),
+                                                    Gradient.Stop(color: .black.opacity(0), location: 0.44),
+                                                    Gradient.Stop(color: .black.opacity(0.7), location: 1.00),
+                                                ],
+                                                    startPoint: UnitPoint(x: 0.5, y: 0),
+                                                    endPoint: UnitPoint(x: 0.5, y: 1))).cornerRadius(25)
+                                            
+                                            
+                                            VStack (alignment: .leading)
                                             {
-                                                Image(systemName: "clock")
-                                                Text("\(recipe.time) min")
-                                                Spacer(minLength: 5)
-                                                Button (action: {recipe.favourite = true } )
+                                                //Team Name
+                                                Text(recipe.name).font(.title).bold()
+                                                
+                                                //Learners
+                                                HStack
                                                 {
-                                                    Image(systemName: "heart.circle")
+                                                    Image(systemName: "clock")
+                                                    Text("\(recipe.time) min")
+                                                    Spacer(minLength: 5)
+                                                    Button (action: {
+                                                        heart = !heart
+                                                        recipe.favourite = true
+                                                    } )
+                                                    {
+                                                        if(heart==true)
+                                                        {
+                                                            Image(systemName: "heart.circle")
+                                                        }
+                                                        else
+                                                        {
+                                                            Image(systemName: "heart.circle.fill")
+                                                        }
+                                                    }
                                                 }
-                                            }
-                                        }.foregroundColor(.white).shadow(radius: 30).padding()
-                                    }.padding()
+                                            }.foregroundColor(.white).shadow(radius: 30).padding()
+                                        }.padding()
+                                    }
                                 }
                             }
                         }
@@ -101,9 +126,10 @@ struct CountryView: View
         }
     }
 }
-
+/*
 #Preview {
     
     CountryView(data:WorldPanApp().$data)
 }
 
+*/

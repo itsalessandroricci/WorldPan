@@ -13,14 +13,17 @@ struct RecipeView: View {
     // SEGMENTED CONTROL OPTIONS
     
     @State private var selectedSegment = 0
+    @State public var recipe:Recipe
+    @State public var country:Country
     
     var body: some View {
         NavigationView{
             ScrollView{
-                
+             
+            
                 ZStack{
                     
-                    Image("carbonara")
+                    Image(recipe.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 394, height: 264)
@@ -28,18 +31,18 @@ struct RecipeView: View {
                     
                     VStack {
                         HStack {
-                            Text("Carbonara")
+                            Text(recipe.name)
                                 .font(.title)
                                 .bold()
                                 .foregroundColor(.black)
                             Spacer()
                             HStack {
                                 Image(systemName: "timer")
-                                Text("20 min")
+                                Text(String(recipe.time) + " min")
                             }.padding()
                         }.padding(.leading, 14.0)
                         
-                        Text("Creamy Roman pasta dish with eggs, Pecorino cheese, guanciale, and black pepper, a culinary masterpiece.")
+                        Text(recipe.description)
                             .fontWeight(.regular)
                             .foregroundColor(.black)
                             .frame(width: 362, height: 70, alignment: .topLeading)
@@ -54,10 +57,23 @@ struct RecipeView: View {
                                         .foregroundColor(.color1)
                                 }
                                 VStack(alignment: .leading, spacing: 10){
-                                    Text("Easy")
-                                        .font(Font.custom("SF Pro", size: 15))
-                                        .foregroundColor(.black)
-                                    Text("2")
+                                    if(recipe.difficulty==0)
+                                    {
+                                        Text("Easy").font(Font.custom("SF Pro", size: 15))
+                                            .foregroundColor(.black)
+                                    }
+                                    if(recipe.difficulty==1)
+                                    {
+                                        Text("Medium").font(Font.custom("SF Pro", size: 15))
+                                            .foregroundColor(.black)
+                                    }
+                                    if(recipe.difficulty==2)
+                                    {
+                                        Text("Difficult").font(Font.custom("SF Pro", size: 15))
+                                            .foregroundColor(.black)
+                                    }
+                                    
+                                    Text("\(recipe.servings)")
                                         .font(Font.custom("SF Pro", size: 15))
                                         .foregroundColor(.black)
                                 }
@@ -74,10 +90,10 @@ struct RecipeView: View {
                                 
                                 VStack(alignment: .leading, spacing: 10)
                                 {
-                                    Text("565 Kcal")
+                                    Text(recipe.calories)
                                         .font(Font.custom("SF Pro", size: 15))
                                         .foregroundColor(.black)
-                                    Text("65,3 Carbs")
+                                    Text(recipe.carbs)
                                         .font(Font.custom("SF Pro", size: 15))
                                         .foregroundColor(.black)
                                 }
@@ -114,14 +130,14 @@ struct RecipeView: View {
                         //                        INGREDIENTS
                         if selectedSegment == 0 {
                             
-                            IngredientsView()
+                            IngredientsView(recipe: recipe, country: country)
                             
                         }
                         
                         //                    INSTRUCTIONS
                         ;  if selectedSegment == 1 {
                             
-                            InstructionsView()
+                            InstructionsView(recipe: recipe, country: country)
                             
                         }
                     }
@@ -133,7 +149,7 @@ struct RecipeView: View {
                 
                 //                NAVIGATION TITLE
             
-            }  .navigationBarTitle("ITALY", displayMode: .inline)
+            }  .navigationBarTitle(country.name, displayMode: .inline)
                 
 //                .toolbarBackground(Color.color1,for: .navigationBar)
 //                .navigationBarItems(trailing: Button("Back") {
@@ -148,7 +164,8 @@ struct RecipeView: View {
     }
     
 
-
+/*
 #Preview {
     RecipeView()
 }
+*/

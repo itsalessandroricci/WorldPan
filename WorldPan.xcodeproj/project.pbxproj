@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7A36FB3C2AE13FED008B4AE3 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36FB3B2AE13FED008B4AE3 /* FilterView.swift */; };
-		B43520112AE3E9AF002DD866 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43520102AE3E9AF002DD866 /* TestView.swift */; };
 		B43520132AE3F2F6002DD866 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43520122AE3F2F6002DD866 /* IngredientsView.swift */; };
 		B43520152AE3F31F002DD866 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43520142AE3F31F002DD866 /* InstructionsView.swift */; };
 		B43520172AE67E2A002DD866 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43520162AE67E2A002DD866 /* CountryView.swift */; };
+		B4663D142AE7B0B70053A924 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4663D132AE7B0B70053A924 /* LocationView.swift */; };
 		B4EA5D262AE1227400A4C88E /* WorldPanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA5D252AE1227400A4C88E /* WorldPanApp.swift */; };
 		B4EA5D2A2AE1227600A4C88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EA5D292AE1227600A4C88E /* Assets.xcassets */; };
 		B4EA5D2D2AE1227600A4C88E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EA5D2C2AE1227600A4C88E /* Preview Assets.xcassets */; };
@@ -23,10 +23,10 @@
 
 /* Begin PBXFileReference section */
 		7A36FB3B2AE13FED008B4AE3 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		B43520102AE3E9AF002DD866 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		B43520122AE3F2F6002DD866 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		B43520142AE3F31F002DD866 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		B43520162AE67E2A002DD866 /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
+		B4663D132AE7B0B70053A924 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		B4EA5D222AE1227400A4C88E /* WorldPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EA5D252AE1227400A4C88E /* WorldPanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPanApp.swift; sourceTree = "<group>"; };
 		B4EA5D292AE1227600A4C88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				B43520122AE3F2F6002DD866 /* IngredientsView.swift */,
 				B43520142AE3F31F002DD866 /* InstructionsView.swift */,
 				7A36FB3B2AE13FED008B4AE3 /* FilterView.swift */,
-				B43520102AE3E9AF002DD866 /* TestView.swift */,
+				B4663D132AE7B0B70053A924 /* LocationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,7 +169,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B43520112AE3E9AF002DD866 /* TestView.swift in Sources */,
 				B4EA5D342AE1249E00A4C88E /* DataSet.swift in Sources */,
 				B4EA5D382AE1257100A4C88E /* FavouriteView.swift in Sources */,
 				B4EA5D262AE1227400A4C88E /* WorldPanApp.swift in Sources */,
@@ -177,6 +176,7 @@
 				B43520172AE67E2A002DD866 /* CountryView.swift in Sources */,
 				7A36FB3C2AE13FED008B4AE3 /* FilterView.swift in Sources */,
 				B4EA5D3B2AE1269900A4C88E /* RecipeView.swift in Sources */,
+				B4663D142AE7B0B70053A924 /* LocationView.swift in Sources */,
 				B43520152AE3F31F002DD866 /* InstructionsView.swift in Sources */,
 				B43520132AE3F2F6002DD866 /* IngredientsView.swift in Sources */,
 			);
