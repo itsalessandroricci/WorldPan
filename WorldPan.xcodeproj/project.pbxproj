@@ -68,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				B4EA5D252AE1227400A4C88E /* WorldPanApp.swift */,
-				B4EA5D392AE125D200A4C88E /* View */,
 				B4EA5D332AE1249E00A4C88E /* DataSet.swift */,
+				B4EA5D392AE125D200A4C88E /* View */,
 				B4EA5D292AE1227600A4C88E /* Assets.xcassets */,
 				B4EA5D2B2AE1227600A4C88E /* Preview Content */,
 			);
