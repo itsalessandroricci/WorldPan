@@ -1617,7 +1617,7 @@ var countries:[Country] =
               
              Recipes:[
                 
-                Recipe(name: "Filet Mignon with Red Wine Reduction", imageName: "filetmignon", ingredient:
+                Recipe(name: "Filet Mignon", imageName: "filetmignon", ingredient:
                     [
                         Ingredient(name: "Filet Mignon Steaks", weight: "4 x 200g", imageName: "filetmignon"),
                         Ingredient(name: "Red Wine", weight: "300ml", imageName: "redwine"),
