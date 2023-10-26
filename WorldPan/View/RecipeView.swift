@@ -14,10 +14,10 @@ struct RecipeView: View {
     
     @State private var selectedSegment = 0
     @State public var recipe:Recipe
-    @State public var country:Country
+    @State public var country:String
+    @Binding public var countries:[Country]
     
     var body: some View {
-        NavigationView{
             ScrollView{
              
             
@@ -41,12 +41,12 @@ struct RecipeView: View {
                                 Text(String(recipe.time) + " min")
                             }.padding()
                         }.padding(.leading, 14.0)
-                        
-                        Text(recipe.description)
-                            .fontWeight(.regular)
-                            .foregroundColor(.black)
-                            .frame(width: 362, height: 70, alignment: .topLeading)
-                        
+                     
+                            Text(recipe.description)
+                                .fontWeight(.regular)
+                                .foregroundColor(.black)
+                                .frame(width: 362, height: 70, alignment: .topLeading)
+                       
                         
                         HStack{
                             HStack{
@@ -130,14 +130,14 @@ struct RecipeView: View {
                         //                        INGREDIENTS
                         if selectedSegment == 0 {
                             
-                            IngredientsView(recipe: recipe, country: country)
+                            IngredientsView(recipe: recipe, country: country, countries: $countries)
                             
                         }
                         
                         //                    INSTRUCTIONS
                         ;  if selectedSegment == 1 {
                             
-                            InstructionsView(recipe: recipe, country: country)
+                            InstructionsView(recipe: recipe)
                             
                         }
                     }
@@ -149,7 +149,7 @@ struct RecipeView: View {
                 
                 //                NAVIGATION TITLE
             
-            }  .navigationBarTitle(country.name, displayMode: .inline)
+            } .navigationBarTitle(country, displayMode: .inline)
                 
 //                .toolbarBackground(Color.color1,for: .navigationBar)
 //                .navigationBarItems(trailing: Button("Back") {
@@ -159,13 +159,7 @@ struct RecipeView: View {
         
             
     }
-        
-        
-    }
-    
 
-/*
-#Preview {
-    RecipeView()
-}
-*/
+//#Preview {
+//    RecipeView()
+//}

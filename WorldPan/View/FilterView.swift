@@ -22,7 +22,7 @@ struct FilterView: View
     var body: some View
     {
 
-    NavigationView
+    NavigationStack
     {
         VStack (alignment: .leading)
         {

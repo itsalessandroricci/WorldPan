@@ -10,6 +10,7 @@ import Foundation
 
 struct Country: Identifiable
 {
+    
     var id: UUID = UUID()
     var name: String
     var imageName: String
@@ -61,11 +62,13 @@ struct Recipe: Identifiable
     let servings: Int
     var description: String
     
+   
+    
 }
 
 
-class DataSet
-{
+
+
     
    var countries:[Country] =
     //Italy
@@ -444,29 +447,194 @@ class DataSet
      
      //THAILAND
     
-    Country (name: "Thailand", imageName: "thailand", Recipes: [Recipe(name: "Pan Thai", imageName: "panthai", ingredient:
-      [
-        Ingredient(name: "Rice noodles", weight: "125g"), Ingredient(name: "Lime juice", weight: "3 tbsp"), Ingredient(name: "Cayenne pepper", weight: "1/2 tsb", imageName: "cayannepepper"),Ingredient(name: "Light Muscovado sugar", weight: "2 tsp", imageName: "muscovadosugar"), Ingredient(name: "Fish sauce", weight: "2 tbsp", imageName: "blackpepper"), Ingredient(name: "Tiger prawn (cooked and peeled, tailes left on)", weight: "200g", imageName: "tigerprawn"), Ingredient(name: "Spring onion (sliced)", weight: "4", imageName: "springonion"),
-        Ingredient(name: "Bean Sprout", weight: "140 g", imageName: "beansprout"), Ingredient(name: "Salted peanuts (finely chopped)", weight: "25 g", imageName: "saltedpeanuts"),
-        Ingredient(name: "Coriander leaves", weight: "Small handful", imageName: "corianderleaves")
-      ],
-        instruction:
-      [
-        Instruction(number: 1, title: "Boil the Noodles:", description: "Put the noodles in a large heatproof bowl, pour boiling water over them and leave for 4 minutes, then drain and refresh under cold running water."),
-        Instruction(number: 2, title: "Prepare the Sauce:", description: "Put the lime juice, cayenne, sugar and fish sauce in a bowl and mix well. Have all the other ingredients ready by the cooker.."),
-        Instruction(number: 3, title: "Combine all ingrediets:", description: "Heat the oil and fry the prawns until warmed through. Add the spring onions and noodles and toss around. Tip in the lime juice mixture, then stir in the beansprouts and half the peanuts and coriander. Cook for 1 minute until everything is heated through."),
-        Instruction(number: 4, title: "Plated:", description: "Pile into a large dish, scatter with the rest of the peanuts and coriander, and serve with lime wedges and sweet chilli sauce.")
-      ],
-        difficulty: 0,
-        time: 30,
-        favourite: false,
-        calories: "531 Kcal",
-        carbs: "62 carbs",
-        servings: 2,
-        description: "Almost a national dish of Thailand, Mary Cadogan's simplified take makes it easy to shop for - and very authentic tasting."
-      )
+     Country (name: "Thailand", imageName: "thailand", Recipes:
+                 [Recipe(name: "Pan Thai", imageName: "panthai",
+                         
+                   ingredient:
+                     [
+                         Ingredient(name: "Rice noodles", weight: "125g", imageName: "ricenoodles"),
+                         Ingredient(name: "Lime juice", weight: "3 tbsp", imageName: "lime"),
+                         Ingredient(name: "Cayenne pepper", weight: "1/2 tsb", imageName: "cayannepepper"),
+                         Ingredient(name: "Light Muscovado sugar", weight: "2 tsp", imageName: "muscovadosugar"),
+                         Ingredient(name: "Fish sauce", weight: "2 tbsp", imageName: "fishsauce"),
+                         Ingredient(name: "Tiger prawn (cooked and peeled, tailes left on)", weight: "200g", imageName: "tigerprawn"),
+                         Ingredient(name: "Spring onion (sliced)", weight: "4", imageName: "springonion"),
+                         Ingredient(name: "Bean Sprout", weight: "140 g", imageName: "beansprout"),
+                         Ingredient(name: "Salted peanuts (finely chopped)", weight: "25 g", imageName: "saltedpeanuts"),
+                         Ingredient(name: "Coriander leaves", weight: "Small handful", imageName: "corianderleaves")
+                 
+                     ],
+                 instruction:
+                     [
+                 Instruction(number: 1,
+                             title: "Boil the Noodles:",
+                             description: "Put the noodles in a large heatproof bowl, pour boiling water over them and leave for 4 minutes, then drain and refresh under cold running water."),
+                 Instruction(number: 2,
+                             title: "Prepare the Sauce:",
+                             description: "Put the lime juice, cayenne, sugar and fish sauce in a bowl and mix well. Have all the other ingredients ready by the cooker.."),
+                 Instruction(number: 3,
+                             title: "Combine all ingrediets:",
+                             description: "Heat the oil and fry the prawns until warmed through. Add the spring onions and noodles and toss around. Tip in the lime juice mixture, then stir in the beansprouts and half the peanuts and coriander. Cook for 1 minute until everything is heated through."),
+                 Instruction(number: 4,
+                             title: "Plated:",
+                             description: "Pile into a large dish, scatter with the rest of the peanuts and coriander, and serve with lime wedges and sweet chilli sauce.")
+                     ],
+                 difficulty: 0,
+                 time: 30,
+                 favourite: false,
+                 calories: "531 Kcal",
+                 carbs: "62 carbs",
+                 servings: 2,
+                 description: "Almost a national dish of Thailand, Mary Cadogan's simplified take makes it easy to shop for - and very authentic tasting."
+                         
+               ),
+                  Recipe(name: "Tom Kha Gai", imageName: "tomkhagai",
+                         ingredient: [
+                             Ingredient(name: "2 boneless, skinless chicken breasts thinly sliced", weight: "About 225g", imageName: "chickenbreasts"),
+                             Ingredient(name: "Coconut milk", weight: "400 ml", imageName: "coconutmilk"),
+                             Ingredient(name: "Chicken broth", weight: "2 cups", imageName: "chickenbroth"),
+                             Ingredient(name: "Slices of galangal", weight: "3-4", imageName: "chickenbroth"),
+                             Ingredient(name: "Kaffir lime leaves, torn into pieces", weight: "3-4", imageName: "leaveskaffir"),
+                             Ingredient(name: "Stalks of lemongrass, cut into 2-inch pieces and smashed", weight: "2-3", imageName: "stalkslemongrass"),
+                             Ingredient(name: "Red chili", weight: "2-3 slices", imageName: "redchilli"),
+                             Ingredient(name: "Shiitake mushrooms, sliced", weight: "200 g", imageName: "shiitakemushrooms"),
+                             Ingredient(name: "Fish sauce", weight: "2 tbsp", imageName: "fishsauce"),
+                             Ingredient(name: "Lime juice", weight: "2 tbsp", imageName: "lime"),
+                             Ingredient(name: "Sugar", weight: "1 tbsp", imageName: "sugar"),
+                             Ingredient(name: "Fresh cilantro leaves", weight: "To taste", imageName: "corianderleaves"),
+                             Ingredient(name: "Salt", weight: "To taste", imageName: "salt")
+                         ],
+                         
+                         instruction: [
+                             Instruction(number: 1,
+                                         title: "Preparation of the Thai Coconut Soup Base:",
+                                         description: "In a large soup pot, bring the coconut milk and chicken broth to a boil. Add the galangal (or ginger), kaffir lime leaves, and lemongrass. Let it simmer for about 5 minutes to allow the flavors to infuse."),
+                             Instruction(number: 2,
+                                         title: "Cooking the Chicken in the Soup:",
+                                         description: "Add the sliced chicken to the pot and cook until the chicken is thoroughly cooked, which should take about 5-7 minutes."),
+                             Instruction(number: 3,
+                                         title: "Adding Mushrooms and Chili to the Soup:",
+                                         description: "Add the mushrooms and red chili slices and cook for an additional 3-5 minutes, or until the mushrooms are tender."),
+                             Instruction(number: 4,
+                                         title: "Seasoning and Final Flavour Adjustment:",
+                                         description: "Stir in the fish sauce, lime juice, and sugar. Mix well and taste, adjusting the flavors by adding salt if necessary."),
+                             Instruction(number: 5,
+                                         title: "Straining Aromatics from the Soup:",
+                                         description: "Remove the galangal, kaffir lime leaves, and lemongrass stalks from the soup."),
+                             Instruction(number: 6,
+                                         title: "Serving Tom Kha Gai with Cilantro Garnish:",
+                                         description: "Serve the Tom Kha Gai hot, garnished with fresh cilantro leaves.")
+                         ],
+                         difficulty: 0,
+                         time: 30,
+                         favourite: false,
+                         calories: "300 kcla",
+                         carbs: "15 carbs",
+                         servings: 2,
+                         description: "This soup has a delightful balance of flavors with a mix of creamy coconut milk, the brightness of lime, and the savory umami from the fish sauce. Feel free to adjust the chili and other ingredients to suit your spice tolerance."
+                        ),
+                  
+                  Recipe(name: "Pad See Ew", imageName: "padseeew",
+                         ingredient: [
+                             Ingredient(name: "Wide rice noodles", weight: "225g", imageName: "ricenoodles"),
+                             Ingredient(name: "Vegatable oil", weight: "2 tbsp", imageName: "oil"),
+                             Ingredient(name: "Cloves garlic, minced", weight: "2", imageName: "garlic"),
+                             Ingredient(name: "Sliced chicken breast ", weight: "115 g", imageName: "chickenbreasts"),
+                             Ingredient(name: "Kaffir lime leaves, torn into pieces", weight: "3-4", imageName: "leaveskaffir"),
+                             Ingredient(name: "Egg", weight: "2", imageName: "eggs"),
+                             Ingredient(name: "Chinese broccoli", weight: "1 cup", imageName: "chinesebroccoli"),
+                             Ingredient(name: "Dark soy sauce", weight: "2 tbsp", imageName: "darksoysauce"),
+                             Ingredient(name: "Light soy sauce", weight: "1 tbsp", imageName: "lightsoysauce"),
+                             Ingredient(name: "Oyster sauce", weight: "1 tbsp", imageName: "oystersauce"),
+                             Ingredient(name: "Sugar", weight: "1/2 tbsp", imageName: "sugar"),
+                             Ingredient(name: "White pepper", weight: "A pinch", imageName: "whitepepper"),
+                             Ingredient(name: "Red chili flakes", weight: "To taste", imageName: "redchilli"),
+                             Ingredient(name: "Chopped green onions for garnish", weight: "To taste", imageName: "choppedgreenonions"),
+                             Ingredient(name: "Lime wedges for serving", weight: "To taste", imageName: "lime")
+                         ],
+                         
+                         instruction: [
+                             Instruction(number: 1,
+                                         title: "Prepare the Rice Noodles:",
+                                         description: "If your rice noodles are not already separated, cook them according to the package instructions, then rinse them under cold water to prevent sticking. Set aside."),
+                             Instruction(number: 2,
+                                         title: "Heat the Oil and Garlic:",
+                                         description: "In a wok or large skillet, heat the vegetable oil over medium-high heat. Add the minced garlic and stir-fry for about 30 seconds until fragrant."),
+                             Instruction(number: 3,
+                                         title: "Cook the Chicken:",
+                                         description: "Add the sliced chicken and cook until it's no longer pink, which should take about 2-3 minutes."),
+                             Instruction(number: 4,
+                                         title: "Scramble the Eggs:",
+                                         description: "Add the Chinese broccoli (or broccoli florets) to the wok and stir-fry for a few minutes until they are tender-crisp and bright green."),
+                             Instruction(number: 5,
+                                         title: "Add the Broccoli:",
+                                         description: "Remove the galangal, kaffir lime leaves, and lemongrass stalks from the soup."),
+                             Instruction(number: 6,
+                                         title: "Sauce and Noodles:",
+                                         description: "Add the cooked rice noodles to the wok and pour the dark soy sauce, light soy sauce, oyster sauce, sugar, and white pepper over the noodles. Toss everything together until the noodles are well-coated and evenly browned."),
+                             Instruction(number: 7,
+                                         title: "Spice it Up (Optional):",
+                                         description: "If you like some heat, you can add red chili flakes at this stage to your preferred level of spiciness."),
+                             Instruction(number: 8,
+                                         title: "Taste and Adjusts:",
+                                         description: "Taste the dish and adjust the seasoning if needed with more soy sauce or sugar.."),
+                             Instruction(number: 9,
+                                         title: "Serve::",
+                                         description: "Serve hot, garnished with chopped green onions and lime wedges on the side.")
+                         ],
+                         difficulty: 1,
+                         time: 30,
+                         favourite: false,
+                         calories: "300-600 Kcla",
+                         carbs: "50 carbs",
+                         servings: 2,
+                         description: "Pad See Ew is a popular Thai stir-fried noodle dish made with wide, flat rice noodles, meat (often chicken, beef, or shrimp), and vegetables. The dish is known for its sweet and savory flavor."
+                        ),
+                  
+                  Recipe(name: "Khanom Tom", imageName: "khanomtom",
+                         ingredient: [
+                             Ingredient(name: "Glutinous rice", weight: "1 cup", imageName: "ricenoodles"),
+                             Ingredient(name: "Mung bean paste", weight: "1/2 cup", imageName: "mungbeanpaste"),
+                             Ingredient(name: "Shredded coconut", weight: "1/2 cups", imageName: "shreddedcoconut"),
+                             Ingredient(name: "Sugar", weight: "1/4 cup", imageName: "sugar"),
+                             Ingredient(name: "Salt", weight: "1/4 tbsp", imageName: "salt"),
+                             Ingredient(name: "Sesame seeds, toasted", weight: "To taste", imageName: "sesameseeds"),
+                             Ingredient(name: "Banana leaves", weight: "To taste", imageName: "bananaleaves")
+                             ],
+                         
+                         instruction: [
+                             Instruction(number: 1,
+                                         title: "Prepare the Mung Bean Paste Filling::",
+                                         description: "In a saucepan, combine the mung bean paste, 1/4 cup shredded coconut, 1/4 cup granulated sugar, and 1/4 teaspoon salt. Cook over low heat, stirring constantly, until the mixture thickens and becomes a cohesive paste. Let it cool."),
+                             Instruction(number: 2,
+                                         title: "Cook the Glutinous Rice:",
+                                         description: "Rinse the glutinous rice in cold water until the water runs clear. Then, soak the rice in enough water to cover it for at least 2 hours or overnight. Drain the rice, then steam it for about 20-25 minutes until it's tender."),
+                             Instruction(number: 3,
+                                         title: "Shape the Rice Balls:",
+                                         description: "ake a small amount of sticky rice, flatten it in your palm, and place a teaspoon of the mung bean paste in the center. Enclose the paste with the rice and shape it into a ball about the size of a walnut. Repeat for the remaining rice and filling."),
+                             Instruction(number: 4,
+                                         title: "Wrap the Rice Balls:",
+                                         description: "Wrap each rice ball in a piece of banana leaf or parchment paper and secure it with a piece of string or kitchen twine."),
+                             Instruction(number: 5,
+                                         title: "Cook the Rice Balls:",
+                                         description: "ring a large pot of water to a boil. Add the wrapped rice balls and cook for about 10-15 minutes until they float to the surface. Remove and let them cool."),
+                             Instruction(number: 6,
+                                         title: "Coat with Coconut:",
+                                         description: "Roll the cooked rice balls in the remaining shredded coconut, ensuring they are well coated."),
+                             Instruction(number: 7,
+                                         title: "Garnish (Optional):",
+                                         description: "Optionally, you can sprinkle some toasted sesame seeds on the coated rice balls for added flavor and presentation.")
+                         ],
+                         difficulty: 0,
+                         time: 1,
+                         favourite: false,
+                         calories: "80-100 Kcla",
+                         carbs: "15-20 carbs",
+                         servings: 3,
+                         description: "Khanom Tom, also known as 'Coconut-Covered Sticky Rice Balls', is a traditional Thai dessert made from glutinous rice balls filled with sweet mung bean paste and coated with shredded coconut."
+                        )
+             ]
+           )
     ]
-  )
-]
-}
+
 

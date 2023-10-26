@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "bakd-raw-by-karolin-baitinger-3Z1kIDz2yXc-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

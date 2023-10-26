@@ -10,7 +10,9 @@ import SwiftUI
 @main
 struct WorldPanApp: App
 {
-    @State public var data:DataSet=DataSet()
+ //   @State  var data:DataSet=dataSet
+    @State var state: [Country] = countries
+
     var body: some Scene
     {
         WindowGroup
@@ -19,12 +21,12 @@ struct WorldPanApp: App
             TabView
             {
              
-                DiscoverView(data: $data)
+                DiscoverView( countries: $state)
                     .tabItem {
                         Label("Countries", systemImage: "globe.desk.fill")
                         }
                     
-                FavouriteView(data:$data)
+                FavouriteView(countries:$state)
                     .tabItem {
                         Label("Favourites", systemImage: "heart")
                     }

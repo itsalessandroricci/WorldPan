@@ -10,7 +10,7 @@ import SwiftUI
 struct InstructionsView: View
 {
     @State public var recipe:Recipe
-    @State public var country:Country
+    
     
     var body: some View
     {
@@ -65,7 +65,7 @@ struct InstructionsView: View
                         }
                         
                     }
-                
+                    .padding(.vertical, 8)
                 }
         }
     }

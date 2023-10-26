@@ -10,7 +10,8 @@ import SwiftUI
 struct IngredientsView: View
 {
     @State public var recipe:Recipe
-    @State public var country:Country
+    @State public var country:String  // NAME OF COUNTRY NOT COUNTRY OBJECT
+    @Binding public var countries:[Country]
     
     var body: some View
     {
@@ -40,7 +41,7 @@ struct IngredientsView: View
                     }
                     .frame(width: 372.0, height: 100.0)
                     .padding(.trailing, 50.0)
-                }.navigationTitle(country.name)
+                }.navigationTitle(country)
             }
         }
     }
@@ -169,8 +170,7 @@ struct IngredientsView: View
         
         
        
-/*
-#Preview {
-    IngredientsView()
-}
-*/
+
+//#Preview {
+//    IngredientsView()
+//}
