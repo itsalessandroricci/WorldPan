@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "16 Healthy Human Foods for Dogs (That You Haven't Thought Of).jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

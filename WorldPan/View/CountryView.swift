@@ -15,7 +15,7 @@ struct CountryView: View
     @State public  var time:Int = -1
     @State public  var difficulty:Int = -1
     @State public  var test:Int = 0
-
+    
     @Binding public var countries:[Country]
     
     let color1=Color("color1")
@@ -97,10 +97,10 @@ struct CountryView: View
                                                 
                                                 VStack (alignment: .leading)
                                                 {
-                                                    //Team Name
+                                                    
                                                     Text(recipe.name).font(.title).bold()
                                                     
-                                                    //Learners
+                                                   
                                                     HStack
                                                     {
                                                         Image(systemName: "clock")
@@ -143,10 +143,9 @@ struct CountryView: View
         }
     }
 
-//
+
 //#Preview {
-//    
-//    CountryView()
+//    CountryView(countries: $countries)
 //}
-//
-//
+
+
