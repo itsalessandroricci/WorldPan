@@ -10,14 +10,14 @@ import SwiftUI
 struct FavouriteView: View
 {
     @Binding public var countries:[Country]
-
+    
     let color1=Color("color1")
     
     var body: some View{
         
         
         
-       
+        NavigationStack{
             VStack(alignment: .leading)
             {
                 VStack{
@@ -39,89 +39,89 @@ struct FavouriteView: View
                     ForEach($countries)
                     {
                         $country in
-                    
+                        
                         ForEach($country.Recipes, id: \.id)
+                        {
+                            $recipe in
+                            
+                            if(recipe.favourite)
                             {
-                                $recipe in
                                 
-                                if(recipe.favourite)
+                                
+                                NavigationLink(destination: RecipeView(recipe: recipe, country: country.name, countries: $countries))
                                 {
                                     
-                                    
-                                    NavigationLink(destination: RecipeView(recipe: recipe, country: country.name, countries: $countries))
+                                    ZStack(alignment: .bottomLeading)
                                     {
                                         
-                                        ZStack(alignment: .bottomLeading)
+                                        //Image
+                                        Image(recipe.imageName).resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 351, height: 174)
+                                            .clipped()
+                                            .cornerRadius(25)
+                                            .padding(.top, 5).shadow(color: .gray, radius: 1,y:5)
+                                        
+                                        Rectangle().foregroundColor(.clear).frame(width: 351, height: 174)
+                                            .background(LinearGradient(stops:
+                                                                        [
+                                                                            Gradient.Stop(color: .black.opacity(0), location: 0.40),
+                                                                            Gradient.Stop(color: .black.opacity(0), location: 0.44),
+                                                                            Gradient.Stop(color: .black.opacity(0.7), location: 1.00),
+                                                                        ],
+                                                                       startPoint: UnitPoint(x: 0.5, y: 0),
+                                                                       endPoint: UnitPoint(x: 0.5, y: 1))).cornerRadius(25)
+                                        
+                                        
+                                        VStack (alignment: .leading)
                                         {
+                                            //Team Name
+                                            Text(recipe.name).font(.title).bold()
                                             
-                                            //Image
-                                            Image(recipe.imageName).resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 351, height: 174)
-                                                .clipped()
-                                                .cornerRadius(25)
-                                                .padding(.top, 5).shadow(color: .gray, radius: 1,y:5)
-                                            
-                                            Rectangle().foregroundColor(.clear).frame(width: 351, height: 174)
-                                                .background(LinearGradient(stops:
-                                             [
-                                                Gradient.Stop(color: .black.opacity(0), location: 0.40),
-                                                Gradient.Stop(color: .black.opacity(0), location: 0.44),
-                                                Gradient.Stop(color: .black.opacity(0.7), location: 1.00),
-                                             ],
-                                                startPoint: UnitPoint(x: 0.5, y: 0),
-                                                endPoint: UnitPoint(x: 0.5, y: 1))).cornerRadius(25)
-                                            
-                                            
-                                            VStack (alignment: .leading)
+                                            //Learners
+                                            HStack
                                             {
-                                                //Team Name
-                                                Text(recipe.name).font(.title).bold()
+                                                Image(systemName: "clock")
+                                                Text("\(recipe.time) min")
+                                                Spacer(minLength: 5)
                                                 
-                                                //Learners
-                                                HStack
-                                                {
-                                                    Image(systemName: "clock")
-                                                    Text("\(recipe.time) min")
-                                                    Spacer(minLength: 5)
+                                                
+                                                Button (action:
+                                                            {
+                                                    
+                                                    recipe.favourite.toggle()
                                                     
                                                     
-                                                    Button (action:
-                                                    {
-                                                        
-                                                        recipe.favourite.toggle()
-
-                                                        
-                                                    }, label: {
-                                                        Image(systemName:
-                                                                recipe.favourite ? "heart.circle.fill" : "heart.circle")
-                                                        .bold ()
-                                                        
-                                                        
-                                                        
-                                                    })
+                                                }, label: {
+                                                    Image(systemName:
+                                                            recipe.favourite ? "heart.circle.fill" : "heart.circle")
+                                                    .bold ()
                                                     
                                                     
                                                     
-                                                }
-                                            }.foregroundColor(.white).shadow(radius: 30).padding()
-                                        }.padding()
-                                   }
+                                                })
+                                                
+                                                
+                                                
+                                            }
+                                        }.foregroundColor(.white).shadow(radius: 30).padding()
+                                    }.padding()
                                 }
-                                    }
-                                
-                
-            
                             }
                         }
-                            
-                       }
+                        
                         
                         
                     }
+                }
                 
             }
-
+            
+            
+        }
+        
+    }
+}
 
 
     /*
