@@ -217,8 +217,8 @@ var countries:[Country] =
                            difficulty: 0,
                            time: 30,
                            favourite: false,
-                           calories: "300-400 Kcal",
-                           carbs: "30-50 carbs",
+                           calories: "400 Kcal",
+                           carbs: "50 carbs",
                            servings: 2,
                            description: "A popular Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa."
                           ),
@@ -264,8 +264,8 @@ var countries:[Country] =
                            difficulty: 0,
                            time: 15,
                            favourite: false,
-                           calories: "450-510 Kcal",
-                           carbs: "41-50 carbs",
+                           calories: "510 Kcal",
+                           carbs: "50 carbs",
                            servings: 2,
                            description: "Grilled bread rubbed with garlic, topped with diced tomatoes, fresh basil, and a drizzle of olive oil."
                           )
@@ -664,8 +664,8 @@ var countries:[Country] =
                          difficulty: 0,
                          time: 15,
                          favourite: false,
-                         calories: "80-100 Kcla",
-                         carbs: "15-20 carbs",
+                         calories: "100 Kcla",
+                         carbs: "20 carbs",
                          servings: 2,
                          description: "Thai coconut dumplings with a sweet filling, wrapped in a chewy, translucent skin, offering a delightful bite-sized treat."
                         )
@@ -723,8 +723,8 @@ var countries:[Country] =
                              difficulty: 1,
                              time: 60,
                              favourite: false,
-                             calories: "590-680  Kcla",
-                             carbs: "50-55 carbs",
+                             calories: "680  Kcla",
+                             carbs: "55 carbs",
                              servings: 2,
                              description: "Crispy battered and deep-fried pork served with a sweet and tangy sauce made with vinegar, sugar, and ketchup."
                             ),
@@ -779,8 +779,8 @@ var countries:[Country] =
                                        difficulty: 1,
                                        time: 30,
                                        favourite: false,
-                                       calories: "955-1005 Kcla",
-                                       carbs: "29-30 carbs",
+                                       calories: "1005 Kcla",
+                                       carbs: "30 carbs",
                                        servings: 2,
                                        description: "Stir-fried chicken with peanuts, vegetables, and chili peppers. It's known for its bold and spicy flavor."
                                       ),
@@ -879,7 +879,7 @@ var countries:[Country] =
                                  time: 120,
                                  favourite: false,
                                  calories: "1000 Kcal",
-                                 carbs: "25-30 carbs",
+                                 carbs: "30 carbs",
                                  servings: 2,
                                  description: "Roast duck with a crispy skin, typically served with thin pancakes, hoisin sauce, and sliced scallions."
                                          
@@ -935,8 +935,8 @@ var countries:[Country] =
                 difficulty: 0,
                 time: 15,
                 favourite: false,
-                calories: "50-70 Kcal",
-                carbs: "2-4 carbs",
+                calories: "70 Kcal",
+                carbs: "4 carbs",
                 servings: 2,
                 description: "Chickpea dip with tahini, lemon, garlic, and olive oil. Creamy and nutty, perfect with pita or veggies."
                         
@@ -993,8 +993,8 @@ var countries:[Country] =
                         difficulty: 0,
                         time: 60,
                         favourite: false,
-                        calories: "55-75 kcla",
-                        carbs: "5-7 carbs",
+                        calories: "75 kcla",
+                        carbs: "7 carbs",
                         servings: 3,
                         description: "Chickpea or fava bean balls, deep-fried to perfection with herbs and spices."
                        ),
@@ -1099,8 +1099,8 @@ var countries:[Country] =
                         difficulty: 1,
                         time: 15,
                         favourite: false,
-                        calories: "2-5 Kcla",
-                        carbs: "0.5-1 carbs",
+                        calories: "5 Kcla",
+                        carbs: "1 carbs",
                         servings: 3,
                         description: "Strong and aromatic coffee, similar to Turkish and Arabic coffee, popular in Lebanon and the Middle East."
                        )
@@ -1138,7 +1138,7 @@ var countries:[Country] =
                     time: 60,
                     favourite: false,
                     calories: "220 Kcal",
-                    carbs: "40",
+                    carbs: "40 carbs",
                     servings: 6,
                     description: "A traditional Finnish pastry made with rye flour and filled with rice porridge."
                 ),
@@ -1165,11 +1165,11 @@ var countries:[Country] =
                                      title: "Serve:",
                                      description: "Slice and serve the kalakukko in thin pieces. It can be eaten hot or cold."),
                     ],
-                    difficulty: 3,
+                    difficulty: 2,
                     time: 240,
                     favourite: false,
                     calories: "350 Kcal",
-                    carbs: "45",
+                    carbs: "45 carbs",
                     servings: 4,
                     description: "A traditional Finnish fish pie made with rye crust, fish, and pork belly."
                 ),
@@ -1205,7 +1205,7 @@ var countries:[Country] =
                     time: 45,
                     favourite: false,
                     calories: "320 Kcal",
-                    carbs: "30",
+                    carbs: "30 carbs",
                     servings: 4,
                     description: "A creamy Finnish salmon soup with potatoes, carrots, and dill."
                 ),
@@ -1233,7 +1233,7 @@ var countries:[Country] =
                     time: 60,
                     favourite: false,
                     calories: "180 Kcal",
-                    carbs: "25",
+                    carbs: "25 carbs",
                     servings: 6,
                     description: "A classic Finnish pea soup made with green peas and ham, traditionally served with mustard."
                 ),
@@ -1265,7 +1265,7 @@ var countries:[Country] =
                     time: 75,
                     favourite: false,
                     calories: "280 Kcal",
-                    carbs: "35",
+                    carbs: "35 carbs",
                     servings: 8,
                     description: "A delicious Finnish blueberry pie with a buttery crust and sweet blueberry filling."
                 ),
@@ -1309,7 +1309,7 @@ var countries:[Country] =
                         time: 120,
                         favourite: false,
                         calories: "300 Kcal",
-                        carbs: "45",
+                        carbs: "45 carbs",
                         servings: 8,
                         description: "A classic Swedish pastry with a cinnamon and sugar filling, topped with pearl sugar."
                     ),
@@ -1341,7 +1341,7 @@ var countries:[Country] =
                         time: 45,
                         favourite: false,
                         calories: "400 Kcal",
-                        carbs: "15",
+                        carbs: "15 carbs",
                         servings: 4,
                         description: "Traditional Swedish meatballs made with a blend of ground beef and pork."
                     ),
@@ -1373,7 +1373,7 @@ var countries:[Country] =
                         time: 40,
                         favourite: false,
                         calories: "250 Kcal",
-                        carbs: "30",
+                        carbs: "30 carbs",
                         servings: 6,
                         description: "A traditional Swedish dish featuring pickled herring, potatoes, and sour cream."
                     ),
@@ -1401,7 +1401,7 @@ var countries:[Country] =
                         time: 2880,
                         favourite: false,
                         calories: "300 Kcal",
-                        carbs: "0",
+                        carbs: "0 carbs",
                         servings: 10,
                         description: "A traditional Swedish dish of cured salmon, infused with dill and spices."
                     ),
@@ -1431,7 +1431,7 @@ var countries:[Country] =
                         time: 90,
                         favourite: false,
                         calories: "220 Kcal",
-                        carbs: "20",
+                        carbs: "20 carbs",
                         servings: 8,
                         description: "A unique Swedish dish that resembles a sandwich cake, made with layers of bread, seafood, and creamy fillings."
                     ),
@@ -1467,11 +1467,11 @@ var countries:[Country] =
                                      title: "Serve:",
                                      description: "Serve the biryani hot with raita or salan."),
                     ],
-                    difficulty: 3,
+                    difficulty: 2,
                     time: 90,
                     favourite: false,
                     calories: "400 Kcal",
-                    carbs: "50g",
+                    carbs: "50 carbs",
                     servings: 4,
                     description: "A flavorful Indian rice dish with marinated chicken and aromatic spices."
                 ),
@@ -1503,7 +1503,7 @@ var countries:[Country] =
                     time: 45,
                     favourite: false,
                     calories: "250 Kcal",
-                    carbs: "15g",
+                    carbs: "15 carbs",
                     servings: 4,
                     description: "A popular Indian appetizer with marinated paneer and vegetables, grilled to perfection."
                 ),
@@ -1534,11 +1534,11 @@ var countries:[Country] =
                                      title: "Serve:",
                                      description: "Serve butter chicken with naan or rice."),
                     ],
-                    difficulty: 3,
+                    difficulty: 2,
                     time: 60,
                     favourite: false,
                     calories: "350 Kcal",
-                    carbs: "20g",
+                    carbs: "20 carbs",
                     servings: 4,
                     description: "A creamy and flavorful Indian chicken dish cooked with a tomato-based sauce and butter."
                 ),
@@ -1573,7 +1573,7 @@ var countries:[Country] =
                     time: 90,
                     favourite: false,
                     calories: "300 Kcal",
-                    carbs: "40g",
+                    carbs: "40 carbs",
                     servings: 4,
                     description: "A creamy and hearty Indian dish made with black lentils and kidney beans, simmered in a rich tomato and cream sauce."
                 ),
@@ -1605,7 +1605,7 @@ var countries:[Country] =
                     time: 45,
                     favourite: false,
                     calories: "300 Kcal",
-                    carbs: "40g",
+                    carbs: "40 carbs",
                     servings: 4,
                     description: "A popular Indian dish made with chickpeas, tomatoes, and aromatic spices."
                 ),
@@ -1644,11 +1644,11 @@ var countries:[Country] =
                                      title: "Serve:",
                                      description: "Plate the filet mignon and drizzle with the red wine reduction. Garnish with fresh thyme sprigs."),
                     ],
-                    difficulty: 3,
+                    difficulty: 2,
                     time: 60,
                     favourite: false,
                     calories: "450 Kcal",
-                    carbs: "6g",
+                    carbs: "6 carbs",
                     servings: 4,
                     description: "An elegant and flavorful dish featuring perfectly seared filet mignon steaks with a luxurious red wine reduction sauce."
                 ),
@@ -1680,7 +1680,7 @@ var countries:[Country] =
                     time: 45,
                     favourite: false,
                     calories: "500 Kcal",
-                    carbs: "40g",
+                    carbs: "40 carbs",
                     servings: 4,
                     description: "A comforting American dish of macaroni pasta in a creamy cheddar cheese sauce."
                 ),
@@ -1703,11 +1703,11 @@ var countries:[Country] =
                                      title: "Serve:",
                                      description: "Serve barbecue ribs with extra sauce on the side."),
                     ],
-                    difficulty: 3,
+                    difficulty: 2,
                     time: 180,
                     favourite: false,
                     calories: "600 Kcal",
-                    carbs: "15g",
+                    carbs: "15 carbs",
                     servings: 4,
                     description: "Tender and flavorful American barbecue ribs with a smoky, tangy barbecue sauce."
                 ),
@@ -1738,7 +1738,7 @@ var countries:[Country] =
                     time: 60,
                     favourite: false,
                     calories: "350 Kcal",
-                    carbs: "45g",
+                    carbs: "45 carbs",
                     servings: 8,
                     description: "A classic American dessert with sweet, spiced apples in a flaky pie crust."
                 ),
@@ -1766,11 +1766,11 @@ var countries:[Country] =
                                      title: "Simmer and Serve:",
                                      description: "Simmer clam chowder until potatoes are tender and serve with buttered bread."),
                     ],
-                    difficulty: 3,
+                    difficulty: 2,
                     time: 75,
                     favourite: false,
                     calories: "400 Kcal",
-                    carbs: "25g",
+                    carbs: "25 carbs",
                     servings: 6,
                     description: "A rich and creamy American soup loaded with tender clams, potatoes, and smoky bacon."
                 ),
