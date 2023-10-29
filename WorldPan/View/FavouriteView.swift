@@ -20,18 +20,13 @@ struct FavouriteView: View
         NavigationStack{
             VStack(alignment: .leading)
             {
-                VStack{
-                    HStack{
-                        Text("Favourites").font(.largeTitle)
-                            .bold()
-                            .fontWeight(.black).foregroundColor(color1)
-                            .padding(.trailing, 190.0)
-                            .padding(.top, 16.0)
-                        
-                        
-                        
-                    }
-                }
+//                HStack{
+//                    Text("Favourites").font(.largeTitle)
+//                        .bold()
+//                        .fontWeight(.black).foregroundColor(color1)
+//                        .padding()
+//                    Spacer()
+//                }
                 
                 ScrollView
                 {
@@ -75,10 +70,10 @@ struct FavouriteView: View
                                         
                                         VStack (alignment: .leading)
                                         {
-                                            //Team Name
+                                            
                                             Text(recipe.name).font(.title).bold()
                                             
-                                            //Learners
+                                            
                                             HStack
                                             {
                                                 Image(systemName: "clock")
@@ -96,7 +91,7 @@ struct FavouriteView: View
                                                     Image(systemName:
                                                             recipe.favourite ? "heart.circle.fill" : "heart.circle")
                                                     .bold ()
-                                                    
+                                                    .font(.system(size: 25))
                                                     
                                                     
                                                 })
@@ -104,43 +99,38 @@ struct FavouriteView: View
                                                 
                                                 
                                             }
-                                        }.foregroundColor(.white).shadow(radius: 30).padding()
+                                        }
+                                        .foregroundColor(.white).shadow(radius: 30).padding()
                                     }.padding()
+                                        .padding(.bottom, -28)
                                 }
                             }
                         }
-                        
-                        
-                        
                     }
-                }
-                
+                }.navigationBarTitle("Favourites", displayMode: .large)
+
             }
-            
-            
         }
-        
     }
 }
 
 
-    /*
-    #Preview
-    {
-        FavouriteView(data:WorldPanApp().$data)
-    }
 
-    */
+//#Preview
+//{
+//    FavouriteView(countries: .constant([]))
+//}
 
-                
-                
+
+
+
 //                ScrollView
 //                {
 //                    //Using an innested for each I can filter which of all the recipes are the favourite ones
 //                    ForEach($data.countries)
 //                    {
 //                        country in
-//                        
+//
 //                        ForEach(country.Recipes)
 //                        {
 //                            $recipe in
@@ -157,26 +147,26 @@ struct FavouriteView: View
 //                                    VStack(alignment: .leading)
 //                                    {
 //                                        Text(recipe.name).font(.title).bold()
-//                                        
+//
 //                                        HStack
 //                                        {
-//                                            
+//
 //                                        }
-//                                        
+//
 //                                    }.foregroundColor(.white).padding()
 //                                }
 //                            }
 //                        }
-//                        
+//
 //                    }
 //                }
-//                
+//
 //            }
-//        
-//               
+//
+//
 //    }
 //}
-//    
+//
 //
 //
 ////#Preview

@@ -53,8 +53,7 @@ struct RecipeView: View {
                                 VStack(alignment: .leading, spacing: 10){
                                     Image(systemName: "frying.pan.fill")
                                         .foregroundColor(.color1)
-                                    Image(systemName: "person.2.fill")
-                                        .foregroundColor(.color1)
+                                    
                                 }
                                 VStack(alignment: .leading, spacing: 10){
                                     if(recipe.difficulty==0)
@@ -73,30 +72,24 @@ struct RecipeView: View {
                                             .foregroundColor(.black)
                                     }
                                     
-                                    Text("\(recipe.servings)")
-                                        .font(Font.custom("SF Pro", size: 15))
-                                        .foregroundColor(.black)
+                                    
                                 }
                             }
                             Spacer()
                             HStack{
                                 VStack(alignment: .center, spacing: 10) {
-                                    Image(systemName: "flame.fill")
+                                    Image(systemName: "person.2.fill")
                                         .foregroundColor(.color1)
                                     //                                        .shadow(color: .black, radius: 10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0)
-                                    Image(systemName: "laurel.leading")
-                                        .foregroundColor(.color1)
+                                   
                                 }
                                 
                                 VStack(alignment: .leading, spacing: 10)
                                 {
-                                    Text(recipe.calories)
+                                    Text("\(recipe.servings)")
                                         .font(Font.custom("SF Pro", size: 15))
                                         .foregroundColor(.black)
-                                    Text(recipe.carbs)
-                                        .font(Font.custom("SF Pro", size: 15))
-                                        .foregroundColor(.black)
-                                }
+                                                            }
                                 
                                 
                             }

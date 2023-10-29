@@ -29,7 +29,7 @@ struct DiscoverView: View
         {
             VStack(alignment: .leading)
             {
-                Text("Countries").font(.largeTitle).bold().fontWeight(.black).padding().foregroundColor(color1)
+//                Text("Countries").font(.largeTitle).bold().fontWeight(.black).padding().foregroundColor(color1)
                  
                    
                
@@ -103,7 +103,7 @@ struct DiscoverView: View
                         
                         
                     }
-                }
+                }.navigationBarTitle("Countries", displayMode: .large)
             }
             
         }

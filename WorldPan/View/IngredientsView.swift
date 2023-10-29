@@ -21,7 +21,7 @@ struct IngredientsView: View
             ForEach(recipe.ingredient)
             {
                 ingredient in
-                NavigationLink(destination: LocationView(ingredient: ingredient))
+                NavigationLink(destination: LocationView(ingredient: ingredient, recipe: recipe))
                 {
                     HStack
                     {
@@ -36,6 +36,7 @@ struct IngredientsView: View
                             .bold()
                         Spacer()
                         Text(ingredient.weight)
+                        Image(systemName: "chevron.right")
                         
                         
                     }
