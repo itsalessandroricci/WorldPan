@@ -283,7 +283,7 @@ struct RecipeView: View {
                     .frame(width: 0.0)
 
                 }
-                .padding(.top, 10.0)
+                .padding(.top, 5.0)
 
                 //                NAVIGATION TITLE
 
