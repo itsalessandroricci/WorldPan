@@ -17,7 +17,7 @@ struct LocationView: View
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.85143619677846, longitude: 14.267463135697087), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     var body: some View
     {
-       VStack(alignment: .leading)
+        VStack(alignment: .leading)
         {
             HStack
             {
@@ -38,13 +38,15 @@ struct LocationView: View
                 {
                     location in
                     MapMarker(coordinate: location.coordinate)
-                }
+                }.padding(.bottom)
                 
                 
                 
             }
         }
+        .offset(y: -40)
        
+    
         
     }
 }

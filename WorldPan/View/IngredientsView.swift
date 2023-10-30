@@ -42,7 +42,7 @@ struct IngredientsView: View
                     }
                     .frame(width: 372.0, height: 100.0)
                     .padding(.trailing, 50.0)
-                }.navigationTitle(country)
+                }
             }
         }
     }
