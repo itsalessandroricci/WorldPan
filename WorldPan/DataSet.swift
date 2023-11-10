@@ -1057,8 +1057,8 @@ var countries:[Country] =
                           )
                ]
              ),
-    //Marocco
-        Country(name: "Marocco", imageName: "marocco", Recipes:
+    //Morocco
+        Country(name: "Morocco", imageName: "marocco", Recipes:
                    [
                        Recipe(name: "Tagine Chicken", imageName: "taginechicken", ingredient:
                            [

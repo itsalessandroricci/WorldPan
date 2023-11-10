@@ -46,7 +46,6 @@ struct FilterView: View
             
             Text("Time")
                 .font(.title)
-                .bold()
                 .padding()
                 .padding(.bottom, -25)
             
