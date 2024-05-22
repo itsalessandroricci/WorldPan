@@ -5,7 +5,6 @@ Welcome to **WorldPan**, an app for beginners eager to learn international cooki
 
 ![Static Badge](https://img.shields.io/badge/XCode_Version-15.0-green?style=flat&logo=xcode) ![Static Badge](https://img.shields.io/badge/Swift_Version-5.9-green?style=flat&logo=swift)
 
-
 ## Contents
 
 1. [Description](#description)
@@ -50,7 +49,7 @@ WorldPan is a collaborative project developed by a dedicated team:
 - Eleonora Iannelli
    **App Developer** (https://github.com/Eleiannelli)
 - Maya Navarrete
-   **App Designer** 
+   **App Designer** (https://www.linkedin.com/in/maya-navarrete-650b552bb/)
 - Alessandro Ricci
    **App Developer** (https://github.com/itsalessandroricci)
 
